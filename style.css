@@ -14,6 +14,11 @@ body {
   margin-bottom: 2px;
 }
 
+.univer-logo {
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+}
 .headerText {
   display: flex;
   justify-content: center;
@@ -64,13 +69,48 @@ body {
 .professions {
   display: flex;
   justify-content: center;
+  margin: 15% auto;
 }
 
 #select{
-  margin-top: 70px;
-  width: 300px;
-  height: 38px;
+  opacity: 0.3;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  width: auto;
+  height: 42px;
   font-family: sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 32px;
+}
+
+#select option {
+  opacity: 0.3;
+  color: gray;
+}
+
+.professions button {
+  height: 42px;
+  /* opacity: 0.3; */
+}
+
+#back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
+
+@media (min-aspect-ratio : 16/9) {
+  #back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio : 16/9) {
+  #back-video {
+    width: auto;
+    height: 100%;
+  }
 }
